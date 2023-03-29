@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* ye widht 300px aur height 100px rakhega */
+    box-sizing: border-box;  
+    font-family: 'Josefin Sans', sans-serif;   
+}
+
+
+body{
+    
+    /* To display full screen image width and height property is neccesary */ 
+    width: 100%; 
+    height: 100vh;
+
+
+    background-image: url('../images/pexels-rajesh-tp-1600711.jpg');
+
+    /* Actually no need of this but for safety purpose */
+    background-repeat: no-repeat;
+
+    /* Covers the image to entire page */
+    background-size: cover;
+} 
+span{
+    color: #FD841F;
+}
+
+
+
+
+
+nav{
+    width: 100%;
+    height:15vh;
+    background: rgba(0,0,0,0.6);
+    color:white;
+    
+    /*All our title and menu to the same line  */
+     display: flex;
+     
+     /*our title to one side and menue to other  */
+    justify-content: space-between;
+
+    /* uppar aur niche se same allignment matlab center me  */
+    align-items: center;
+
+    /* sab upper case me  */
+    text-transform: uppercase;
+    
+}
+
+.logo{
+    width: 25%;
+    text-align: center;
+    font-weight: bold;
+}
+.menu{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+.main-sec{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* space around matlab edges se equal length pe  aur space between matlab same object se equal length */
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+main h3{
+    font-size: 35px;
+    font-weight: 300px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 4px black;
+}
+main h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 500px;
+    letter-spacing: 5px;
+    text-shadow: 2px 1px 10px black;
+}
+main p{
+    margin: 0px 0px 25px 0px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px black;
+    font-size: x-large;
+}
+section .btnone{
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+
+}
+section .btntwo{
+    padding: 10px;
+    background-color: #FD841F;
+    color: white;
+    text-decoration: none;
+}
+
+.search-container {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  input[type=text] {
+    width: 300px;
+    padding: 12px 20px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 500px;
+  }
+  
+  
+  
+  button[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .change-content:after{
+    content:'' ;
+    animation: changetext 30s infinite linear;
+    color:#FD841F;
+  }
+@keyframes changetext{
+    0%{content: "Aloo Paratha";}
+    10%{content: "Sandwitch";}
+    20%{content: "Panner Thali";}
+    30%{content: "Pav Bhaji";}
+    40%{content: "Samosa";}
+    50%{content: "Noodles";}
+    60%{content: "Poha";}
+    70%{content: "Idli Dosa";}
+    80%{content: "Veg Thali";}
+    90%{content: "Burger";}
+    100%{content: "Puri Bhaji";}
+
+
+}
+nav .menu a:first-child{
+    color: #fa5a04;
+}
+
